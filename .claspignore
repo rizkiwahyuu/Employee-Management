@@ -1,0 +1,14 @@
+# Do not push documentation and local files to Apps Script runtime unless needed
+README.md
+SECURITY.md
+CHANGELOG.md
+docs/**
+patches/**
+.gitignore
+.claspignore
+.clasp.json.example
+*.xlsx
+*.pdf
+private/**
+secrets/**
+node_modules/**

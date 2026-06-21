@@ -1,0 +1,35 @@
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment and local config
+.env
+.env.*
+!.env.example
+
+# Google Apps Script local config
+.clasp.json
+
+# Node modules if clasp or tooling is added later
+node_modules/
+package-lock.json
+
+# Spreadsheet temporary files
+~$*.xlsx
+*.tmp
+
+# Sensitive local data
+private/
+secrets/
+credentials.json
+service-account*.json

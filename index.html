@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area 3 TIF Employee Management</title>
+
+    <script src="https://cdn.tailwindcss.com/3.4.4"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: { 50: '#f8fafc', 100: '#f1f5f9', 200: '#e2e8f0', 300: '#cbd5e1', 400: '#94a3b8', 500: '#64748b', 600: '#475569', 700: '#334155', 800: '#1e293b', 900: '#0f172a' },
+                        brand: { 50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a' },
+                        navy: { 50: '#eaf1f9', 100: '#d5e3f3', 200: '#abcdde', 300: '#82b7c9', 400: '#58a0b4', 500: '#234a7d', 600: '#1b3b64', 700: '#15325b', 800: '#0f2442', 900: '#0A1D37', 950: '#050f1d' }
+                    },
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }
+                }
+            }
+        } 
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.24.7/babel.min.js"></script>
+
+    <?!= include('styles'); ?>
+</head>
+
+<body class="antialiased">
+
+    <div id="preloader" class="fixed inset-0 bg-slate-50 flex flex-col items-center justify-center z-[100]">
+        <div class="relative flex items-center justify-center mb-6">
+            <div class="pulse-ring absolute"></div>
+            <div
+                class="z-10 bg-white p-4 rounded-[2rem] shadow-xl overflow-hidden flex items-center justify-center border border-slate-100 w-72 h-24 transition-all duration-500 hover:scale-105" style="will-change: transform; -webkit-backface-visibility: hidden; backface-visibility: hidden; transform: translate3d(0,0,0);">
+                <img src="https://i.ibb.co.com/27N5K98Y/Infranexia-Primary-2-1.png"
+                    alt="Area 3 TIF Employee Management" class="h-full w-full object-contain" />
+            </div>
+        </div>
+        <h2 class="text-navy-900 font-extrabold tracking-widest uppercase text-xl mt-2 text-center leading-tight">
+            Area 3 TIF<br /><span class="text-brand-600">Employee Management</span>
+        </h2>
+        <p class="text-slate-500 text-sm mt-5 font-semibold animate-pulse tracking-wide">Memuat Modul ...</p>
+    </div>
+
+    <div id="root"></div>
+
+    <?!= include('scripts'); ?>
+</body>
+
+</html>
